@@ -1,0 +1,87 @@
+/* Quiz styles moved from App.jsx */
+.score-view {
+  display: flex;
+  justify-content: center;
+}
+
+.score-container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.quiz-wrapper {
+  max-width: 760px;
+  width: 100%;
+}
+
+.quiz-card {
+  background: var(--card-bg, #2d2f33);
+  padding: 28px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.quiz-card h2 {
+  margin-top: 0;
+}
+
+.question-text {
+  font-size: 22px;
+}
+
+.options {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.option-btn {
+  padding: 8px 12px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  border-radius: 4px;
+}
+
+.option-btn.selected {
+  background: #ddd;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.next-btn:disabled {
+  opacity: 0.5;
+}
+
+.next-btn {
+  padding: 8px 12px;
+}
+
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent, #000);
+  background: var(--accent-bg, #fff);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+}
+
+.counter:hover {
+  border-color: var(--accent-border, #999);
+}
+
+/* Utility center container (keeps existing layout hook) */
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+}
